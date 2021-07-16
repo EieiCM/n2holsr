@@ -185,7 +185,7 @@ create_lq_tc(struct lq_tc_message *lq_tc, struct interface_olsr *outif)
   struct link_entry *lnk;
   struct neighbor_entry *walker;
   struct tc_mpr_addr *neigh;
-  static int ttl_list[] = { 2, 8, 2, 16, 2, 8, 2, MAX_TTL };
+  static int ttl_list[] = { 2, 2, 2, 2, 2, 2, 2, MAX_TTL };
 
   // remember that we have generated an LQ TC message; this is
   // checked in net_output()
