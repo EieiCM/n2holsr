@@ -177,7 +177,7 @@ static INLINE const char * linkTypeToString(int type) {
  *Misc. Constants
  */
 #define MAXJITTER             HELLO_INTERVAL / 4
-#define MAX_TTL               0xff
+#define MAX_TTL               0x80
 #define MAX_N2HTTL            0x03
 
 /*
