@@ -204,14 +204,14 @@ create_lq_tc(struct lq_tc_message *lq_tc, struct interface_olsr *outif)
     if (outif->ttl_index >= (int)(sizeof(ttl_list) / sizeof(ttl_list[0])))
       outif->ttl_index = 0;
 
-    lq_tc->comm.ttl = (0 <= outif->ttl_index ? ttl_list[outif->ttl_index] : MAX_N2HTTL);
+    lq_tc->comm.ttl = (0 <= outif->ttl_index ? ttl_list[outif->ttl_index] : 3);
     outif->ttl_index++;
 
     OLSR_PRINTF(3, "Creating LQ TC with TTL %d.\n", lq_tc->comm.ttl);
   }
 
   else
-    lq_tc->comm.ttl = MAX_N2HTTL;
+    lq_tc->comm.ttl = 3;
 
   lq_tc->comm.hops = 0;
 
