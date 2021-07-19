@@ -178,6 +178,7 @@ static INLINE const char * linkTypeToString(int type) {
  */
 #define MAXJITTER             HELLO_INTERVAL / 4
 #define MAX_TTL               0xff
+#define MAX_N2HTTL            0x03
 
 /*
  *Sequence numbering
