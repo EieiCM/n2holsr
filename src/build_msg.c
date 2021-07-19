@@ -1089,7 +1089,7 @@ serialize_hna4(struct ip_prefix_list *h, struct interface_olsr *ifp, bool is_zer
     m->v4.olsr_vtime = is_zero_bw ? reltime_to_me(ifp->sgw_sgw_zero_bw_timeout) : ifp->valtimes.hna;
     // olsr_msgsize
     m->v4.originator = olsr_cnf->main_addr.v4.s_addr;
-    m->v4.ttl = MAX_TTL;
+    m->v4.ttl = 100;
     m->v4.hopcnt = 0;
     // seqno
 
