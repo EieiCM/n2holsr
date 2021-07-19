@@ -827,7 +827,7 @@ serialize_mid4(struct interface_olsr *ifp)
 
   /* Fill header */
   m->v4.hopcnt = 0;
-  m->v4.ttl = MAX_TTL;
+  m->v4.ttl = 200;
   /* Set main(first) address */
   m->v4.originator = olsr_cnf->main_addr.v4.s_addr;
   m->v4.olsr_msgtype = MID_MESSAGE;
