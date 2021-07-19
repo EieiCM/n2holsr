@@ -328,7 +328,8 @@ olsr_build_tc_packet(struct tc_message *message)
   message->packet_seq_number = 0;
 
   message->hop_count = 0;
-  message->ttl = MAX_TTL;
+  //message->ttl = MAX_TTL;
+  message->ttl = MAX_N2HTTL;
   message->ansn = get_local_ansn();
 
   message->originator = olsr_cnf->main_addr;
